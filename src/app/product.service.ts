@@ -9,8 +9,8 @@ export class ProductService {
 
   private _albumUrl: string = '../assets/album.json'
 
-  getAlbum(id: Number) {
-    this._http.get(this._albumUrl)
+  getAlbum(id: number) {
+    return this._http.get(this._albumUrl)
     .map(response=>response.json())
   } 
 
